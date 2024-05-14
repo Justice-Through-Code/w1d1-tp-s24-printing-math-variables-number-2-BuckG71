@@ -15,12 +15,12 @@ def calculate_average_grade():
     average_grade = (math_score + science_score + english_score) / 3
 
     # Return the student's name and their average grade
-    # I've added a print f statement here to print the student's name and their average grade.
-    return print(f"{student_name}'s average grade is {average_grade}.")
+    # I used a return statement to return the student name input and the calculated average grade
+    return student_name, average_grade
 
 if __name__ == '__main__':
     # Call the calculate_average_grade function
-    calculate_average_grade()
+    student_name, average_grade = calculate_average_grade()
 
     # Print the student's name and their average grade
-    # print(f"{student_name}'s average grade is {average_grade}")
+    print(f"('{student_name}', {int(average_grade)})")
